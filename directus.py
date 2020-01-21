@@ -27,7 +27,7 @@ class DirectusClient:
     def get_items_list(self, collection):
         return requests.get(self.url + "/items/" + collection).json()
 
-    def get_items(self, collection, id):
+    def get_item(self, collection, id):
         return requests.get(self.url + "/items/" + collection + "/" + str(id)).json()
 
     def create_item(self, collection, item):
