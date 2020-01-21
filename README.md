@@ -2,9 +2,17 @@
 
 Simple Python3 wrapper for the Directus API
 
+## Install
+
+Simply install the package from the root directory with:
+
+```
+pip install .
+```
+
 ## Usage
 ```python
-from directus import DirectusClient
+from directus_api import DirectusClient
 
 url = "http://123.45.678.90:8080"
 project = "Directus"
