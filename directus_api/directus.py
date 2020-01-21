@@ -1,5 +1,3 @@
-import requests
-
 import requests, json
 
 class DirectusClient:
@@ -39,4 +37,4 @@ class DirectusClient:
 
     def get_file(self, id):
         headers = {"Authorization": "Bearer " + self.access}
-        return requests.get(self.url + "/files/" + str(id), headers=headers).json() 
+        return requests.get(self.url + "/files/" + str(id), headers=headers).json()
